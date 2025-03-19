@@ -48,6 +48,6 @@
     "lint": "eslint lib/**/*.js test/**/*.js index.js",
     "lint:fix": "eslint --fix lib/**/*.js test/**/*.js index.js",
     "pretest": "npm run lint --if-present",
-    "test": "nyc --reporter=html --reporter=text mocha --exit --require should --reporter spec --check-leaks"
+    "test": "mocha --exit --require should --reporter spec --check-leaks"
   }
 }
