@@ -49,6 +49,7 @@
     "lint:fix": "eslint --fix lib/**/*.js test/**/*.js index.js",
     "pretest": "npm run lint --if-present",
     "test": "yarn lint && yarn test:mocha",
-    "test:mocha": "mocha --exit --require should --reporter spec --check-leaks"
+    "test:mocha": "mocha --exit --require should --reporter spec --check-leaks",
+    "test-both": "yarn lint && PASS=true yarn test:mocha && yarn test:mocha"
   }
 }
