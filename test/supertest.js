@@ -79,7 +79,7 @@ describe('request(app)', function () {
       });
   });
 
-  it.only('should not ECONNRESET on multiple simultaneous tests', function (done) {
+  it('should not ECONNRESET on multiple simultaneous tests', function (done) {
     const app = express();
 
     app.get('/', function (req, res) {

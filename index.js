@@ -39,7 +39,7 @@ module.exports = function(app, options = {}) {
   }
 
   methods.forEach(function(method) {
-    const fix = process.env.PASS === 'true';
+    const fix = process.env.APPROACH === 'reuse';
     if (fix) {
       let test;
       obj[method] = function(url) {
